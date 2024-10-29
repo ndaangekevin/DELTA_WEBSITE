@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card UI Design</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+  
+<style>
+
+   /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 0;
+  position: relative;
+  margin: auto;
+}
+
+.profile-card:hover {
+  transform: scale(1.05); /* Slight scale-up effect */
+  z-index: 1; /* Bring the card to the front */
+}
+
+
+
+
+
+.image {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+ 
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+
+
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.profile-card .analytics  .number{
+    font-size: 14px;
+    line-height: 20px;
+    color: gray;
+}
+
+
+
+</style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="image">
+        <img src="profile.jpg" alt="" class="profile-img" />
+      </div>
+
+      <div class="text-data">
+        <span class="name">Prof Keshav Dahal</span>
+         <h5>Lecturer and Professor in Computing</h5>
+      </div>
+   
+      <hr>
+      <div class="analytics">
+       
+        <div class="data">
+          <i class="bx bx-message-rounded"></i>
+          <span class="number">20vhhhhhhhhhhhhhhhhhhhhhhhk</span>
+        </div>
+        
+      </div>
+    </div>
+    <div class="profile-card">
+        <div class="image">
+          <img src="profile.jpg" alt="" class="profile-img" />
+        </div>
+  
+        <div class="text-data">
+         <span class="name">Prof Keshav Dahal</span>
+         <h5>Lecturer and Professor in Computing</h5>
+        </div>
+     
+        <hr>
+        <div class="analytics">
+         
+          <div class="data">
+            <i class="bx bx-message-rounded"></i>
+            <span class="number">20vhhhhhhhhhhhhhhhhhhhhhhhk</span>
+          </div>
+          
+        </div>
+    </div>
+      <div class="profile-card">
+        <div class="image">
+          <img src="../res/Keshav-PhotoPP-1024x970.jpg" alt="" class="profile-img" />
+        </div>
+  
+        <div class="text-data">
+            <span class="name">Prof Keshav Dahal</span>
+            <h5>Lecturer and Professor in Computing</h5>
+        </div>
+     
+        <hr>
+        <div class="analytics">
+         
+          <div class="data">
+            <span class="name">Prof Keshav Dahal</span>
+            <h5>Lecturer and Professor in Computing</h5>
+          </div>
+          
+        </div>
+      </div>
+  </body>
+</html>
